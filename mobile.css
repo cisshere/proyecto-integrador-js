@@ -1,0 +1,64 @@
+.menu-des, #menu-des, .menu-label{
+    display: none;
+}
+
+
+@media (max-width: 1050px) {
+
+    .nav-list-principal {
+        position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 96px;
+    left: 0%;
+    width: 21%;
+    align-items: center;
+    background-color: #95260e;
+    padding: 2rem 1rem;
+    z-index: 1;
+    gap: 4rem;
+    }
+
+    .menu-label, .menu-des, .menu-label{
+        display: flex;
+        cursor: pointer;
+    }
+    
+    .menu-label img{
+        width: 2rem;
+        height: 2rem;
+        margin-top: 16px;
+    }
+    
+    #menu-des:checked + .nav-list-principal{
+        display: flex;
+    }
+    
+}
+
+@media (max-width: 874px) {
+    .hero{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 416px) {
+
+    .icono-principal{
+        display: none;
+ }
+
+    .nav-list-principal{
+        top: 3.313rem;
+        left: 5%;
+    }
+
+    .boton-ingreso img{
+        margin: 0;
+    }
+
+    .menu-label img{
+        margin: 0;
+    }
+ }

@@ -9,83 +9,70 @@
 
 }
 
+
 html{
-    background-color: white;
-    scroll-behavior: smooth;
+  background-color: white;
+  scroll-behavior: smooth;
 }
 
 .navegador {
-    display: flex;
-    flex-direction: column;
-    background-color: #95260e; 
-    gap: 1rem;
-}
-
-.labios-logo {
-    height: 5rem;
-    width: 12rem;
-}
-
-.menu-principal {
   display: flex;
-  justify-content: center;
-  gap: 3rem;
+  justify-content: space-between;
+  background-color: #95260e; 
+  padding: 1rem;
 }
 
-.menu-secundario {
-    display: flex;
-    justify-content: center;
+.menu {
+  display: flex;
+  gap: 6rem;
+  }
+
+.labios-rojos-logo {
+  height: 4rem;
+  width: 11rem;
 }
 
-.nav-list{
-    display: flex;
-    gap: 4rem;
+.nav-list-principal{
+  display: flex;
+  gap: 2rem;
 }
+
+
+.nav-list-secundario{
+  display: flex;
+  gap: 1rem;
+  }
 
 .nav-item {
-    display: flex;
-    align-items: center;
-    font-size: 1.3rem;
-    padding: 7px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
 .nav-item-link{
-    color: white;
+  color: white;
 }
 
 .nav-item-link:hover,
 .boton-ingreso a:hover{
-    text-decoration: underline;
- }
-
-
- /* ---------- login y registrase ---------- */
-
-.nav-list-secundario{
-  gap: 0.5rem;
+  text-decoration: underline;
 }
 
-.nav-list-secundario p{
-  margin-top: 0.375rem;
-    color: white;
+
+/* crean cuenta e inicio de sesion */
+
+.btn-registro{
+  display: flex;
+  align-items: center;
 }
 
- .boton-ingreso{
-    display: flex;
-    align-items: center;
+.btn-registro a {
+  font-size: 1rem;
 }
 
-.boton-ingreso img {
-    height: 1.875rem;
-    width: 1.875rem;
-    margin-right: 0.625rem;
-    cursor: pointer;
-}
-
-.boton-ingreso a {
-    border-radius: 0.5rem;
-    color:white;
-    font-size: 0.938rem;
+.bolsa-compra {
+  height: 2rem;
+  cursor: pointer;
 }
 
 
@@ -93,9 +80,8 @@ html{
 
 .hero{
     display: flex;
-    gap: 8rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 3rem;
 }
 
@@ -215,3 +201,6 @@ html{
      color: #95260e;
      font-weight: bold;
     }
+
+
+    /**************** ************************/
