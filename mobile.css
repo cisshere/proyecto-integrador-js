@@ -14,22 +14,6 @@
     .nav-list-principal{
         display: none;
     }
-    
-    
-}
-
-@media (min-width: 1051px){
-
-    .nav-desplegable{
-        position: inherit;
-    flex-direction: row;
-    top: unset;
-    left: unset;
-    width: unset;
-    padding: unset;
-    z-index: 1;
-    gap: 2rem;
-    }
 }
 
 @media (max-width: 874px) {
