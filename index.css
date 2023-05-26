@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&family=Slabo+27px&family=Unbounded:wght@400;500&display=swap');
 
+.nav-desplegable{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 96px;
+  left: 0%;
+  width: 21%;
+  align-items: center;
+  background-color: #95260e;
+  padding: 2rem 1rem;
+  z-index: 1;
+  gap: 4rem;
+}
+
 
 *{
     margin: 0;
@@ -9,6 +23,9 @@
 
 }
 
+.menu-des, #menu-des, .menu-label{
+  display: none;
+}
 
 html{
   background-color: white;
@@ -24,7 +41,6 @@ html{
 
 .menu {
   display: flex;
-  gap: 6rem;
   }
 
 .labios-rojos-logo {

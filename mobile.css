@@ -1,25 +1,6 @@
-.menu-des, #menu-des, .menu-label{
-    display: none;
-}
-
-
 @media (max-width: 1050px) {
 
-    .nav-list-principal {
-        position: absolute;
-    display: none;
-    flex-direction: column;
-    top: 96px;
-    left: 0%;
-    width: 21%;
-    align-items: center;
-    background-color: #95260e;
-    padding: 2rem 1rem;
-    z-index: 1;
-    gap: 4rem;
-    }
-
-    .menu-label, .menu-des, .menu-label{
+    .menu-label, .menu-des{
         display: flex;
         cursor: pointer;
     }
@@ -30,10 +11,25 @@
         margin-top: 16px;
     }
     
-    #menu-des:checked + .nav-list-principal{
-        display: flex;
+    .nav-list-principal{
+        display: none;
     }
     
+    
+}
+
+@media (min-width: 1051px){
+
+    .nav-desplegable{
+        position: inherit;
+    flex-direction: row;
+    top: unset;
+    left: unset;
+    width: unset;
+    padding: unset;
+    z-index: 1;
+    gap: 2rem;
+    }
 }
 
 @media (max-width: 874px) {
