@@ -125,7 +125,8 @@ html{
 
   .portada-contenedor{
     display: flex;
-    padding: 1rem;
+    justify-content: center;
+    margin-top: 18rem;
   }
 
   .portada-contenedor a{
@@ -133,7 +134,6 @@ html{
     background-color: #bb5c46;
     border-radius: 0.5rem;
     color: white;
-    text-decoration: revert;
   }
 
   .portada-contenedor a:hover{
