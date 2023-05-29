@@ -1,10 +1,6 @@
 const navegadorMenu = document.querySelector(".menu");
-const menuDespegable = document.querySelector(".menu-des");
-const navListPrincipal = document.getElementById("nav");
 
- const menu = () => {
-    
-    const img = document.createElement('img');
+const img = document.createElement('img');
     img.src = 'img/menu.png';
     img.alt = "Menu despegable";
     img.classList = 'menu-des';
@@ -14,6 +10,9 @@ const navListPrincipal = document.getElementById("nav");
     const ul = document.createElement('ul');
     ul.id = 'nav';
     ul.classList = 'nav-list-principal';
+
+ 
+ const menu = () => {
 
     const elementos = ['Inicio', 'Productos', 'Beneficio', 'Contacto'];
 
@@ -29,7 +28,12 @@ const navListPrincipal = document.getElementById("nav");
     }
 
     navegadorMenu.appendChild(ul);
-} 
+}
+
+menu();
+
+const menuDespegable = document.querySelector(".menu-des");
+const navListPrincipal = document.querySelector("#nav");
 
 const despeglarMenu = () => {
     navListPrincipal.classList.toggle("nav-list-principal");
@@ -43,12 +47,9 @@ const onResize = () => {
     }
 }
 
-
-
 const init = () => {
     menuDespegable.addEventListener("click",despeglarMenu);
     window.addEventListener("resize", onResize);
 }
 
-menu();
 init();
