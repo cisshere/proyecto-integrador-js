@@ -1,5 +1,6 @@
 const navegadorMenu = document.querySelector(".menu");
-
+const menuDespegable = document.querySelector(".menu-des");
+const navListPrincipal = document.getElementById("nav");
 
  const menu = () => {
     
@@ -29,9 +30,6 @@ const navegadorMenu = document.querySelector(".menu");
 
     navegadorMenu.appendChild(ul);
 } 
-
-const menuDespegable = document.querySelector(".menu-des");
-const navListPrincipal = document.getElementById("nav");
 
 const despeglarMenu = () => {
     navListPrincipal.classList.toggle("nav-list-principal");
