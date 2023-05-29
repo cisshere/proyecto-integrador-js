@@ -1,14 +1,8 @@
 @media (max-width: 1050px) {
 
-    .menu-label, .menu-des{
+    .menu-des{
         display: flex;
         cursor: pointer;
-    }
-    
-    .menu-label img{
-        width: 2rem;
-        height: 2rem;
-        margin-top: 16px;
     }
     
     .nav-list-principal{
@@ -21,24 +15,3 @@
         flex-direction: column;
     }
 }
-
-
-@media (max-width: 416px) {
-
-    .icono-principal{
-        display: none;
- }
-
-    .nav-list-principal{
-        top: 3.313rem;
-        left: 5%;
-    }
-
-    .boton-ingreso img{
-        margin: 0;
-    }
-
-    .menu-label img{
-        margin: 0;
-    }
- }

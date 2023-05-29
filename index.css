@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&family=Slabo+27px&family=Unbounded:wght@400;500&display=swap');
 
-.nav-desplegable{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 96px;
-  left: 0%;
-  width: 21%;
-  align-items: center;
-  background-color: #95260e;
-  padding: 2rem 1rem;
-  z-index: 1;
-  gap: 4rem;
-}
-
 
 *{
     margin: 0;
@@ -21,10 +7,6 @@
     text-decoration: none;
     font-family: 'Unbounded', cursive;
 
-}
-
-.menu-des, .menu-label{
-  display: none;
 }
 
 html{
@@ -41,6 +23,27 @@ html{
 
 .menu {
   display: flex;
+}
+
+.menu-des{
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  padding-top: 1rem;
+}
+
+  .nav-desplegable{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 96px;
+    left: 0%;
+    width: 21%;
+    align-items: center;
+    background-color: #95260e;
+    padding: 2rem 1rem;
+    z-index: 1;
+    gap: 4rem;
   }
 
 .labios-rojos-logo {

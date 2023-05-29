@@ -1,3 +1,35 @@
+const navegadorMenu = document.querySelector(".menu");
+
+
+ const menu = () => {
+    
+    const img = document.createElement('img');
+    img.src = 'img/menu.png';
+    img.alt = "Menu despegable";
+    img.classList = 'menu-des';
+
+    navegadorMenu.appendChild(img);
+
+    const ul = document.createElement('ul');
+    ul.id = 'nav';
+    ul.classList = 'nav-list-principal';
+
+    const elementos = ['Inicio', 'Productos', 'Beneficio', 'Contacto'];
+
+    for (let i= 0; i < elementos.length; i++){
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.textContent = elementos[i];
+        li.classList = 'nav-item';
+        a.classList = 'nav-item-link';
+        a.href = "#" + elementos[i];
+        li.appendChild(a);
+        ul.appendChild(li);
+    }
+
+    navegadorMenu.appendChild(ul);
+} 
+
 const menuDespegable = document.querySelector(".menu-des");
 const navListPrincipal = document.getElementById("nav");
 
@@ -13,9 +45,12 @@ const onResize = () => {
     }
 }
 
+
+
 const init = () => {
     menuDespegable.addEventListener("click",despeglarMenu);
     window.addEventListener("resize", onResize);
 }
 
+menu();
 init();
