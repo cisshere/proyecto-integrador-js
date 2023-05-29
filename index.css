@@ -38,7 +38,7 @@ html{
     flex-direction: column;
     top: 96px;
     left: 0%;
-    width: 21%;
+    width: 25%;
     align-items: center;
     background-color: #95260e;
     padding: 2rem 1rem;
@@ -83,6 +83,7 @@ html{
 .btn-registro{
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .btn-registro a {

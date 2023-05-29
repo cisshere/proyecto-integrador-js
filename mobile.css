@@ -1,3 +1,14 @@
+@media (max-width: 610px){
+    .nav-list-secundario{
+        flex-direction: column;
+    }
+    
+    .btn-registro a{
+        font-size: 0.8rem;
+    }
+
+}
+
 @media (max-width: 1050px) {
 
     .menu-des{
