@@ -11,10 +11,11 @@ const img = document.createElement('img');
     ul.id = 'nav';
     ul.classList = 'nav-list-principal';
 
- 
+    const elementos = ['Inicio', 'Productos', 'Beneficio', 'Contacto'];
+    
+    
  const menu = () => {
 
-    const elementos = ['Inicio', 'Productos', 'Beneficio', 'Contacto'];
 
     for (let i= 0; i < elementos.length; i++){
         const li = document.createElement("li");
@@ -42,23 +43,28 @@ const despeglarMenu = () => {
 }
 
 const onResize = () => {
-    if(window.innerWidth >= 1050){
+    if(window.innerWidth >= 1100){
         navListPrincipal.classList.remove("nav-desplegable");
         navListPrincipal.classList.add("nav-list-principal");
     }
 }
 
-const inicio = document.querySelector("#link-Inicio");
+ const Inicio = document.querySelector("#link-Inicio");
+ const Productos = document.querySelector("#link-Productos");
 
-const productosClick = () => {
+const itemLink = () => {
+    
     navListPrincipal.classList.remove("nav-desplegable");
     navListPrincipal.classList.add("nav-list-principal");
-}
+} 
+
+
 
 const init = () => {
     menuDespegable.addEventListener("click",despeglarMenu);
     window.addEventListener("resize", onResize);
-    inicio.addEventListener("click", productosClick);
+    Inicio.addEventListener("click", itemLink);
+    Productos.addEventListener("click", itemLink);
 }
 
 init();
