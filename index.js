@@ -22,6 +22,7 @@ const img = document.createElement('img');
         a.textContent = elementos[i];
         li.classList = 'nav-item';
         a.classList = 'nav-item-link';
+        a.id = "link-" + elementos[i];
         a.href = "#" + elementos[i];
         li.appendChild(a);
         ul.appendChild(li);
@@ -47,9 +48,17 @@ const onResize = () => {
     }
 }
 
+const inicio = document.querySelector("#link-Inicio");
+
+const productosClick = () => {
+    navListPrincipal.classList.remove("nav-desplegable");
+    navListPrincipal.classList.add("nav-list-principal");
+}
+
 const init = () => {
     menuDespegable.addEventListener("click",despeglarMenu);
     window.addEventListener("resize", onResize);
+    inicio.addEventListener("click", productosClick);
 }
 
 init();
