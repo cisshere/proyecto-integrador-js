@@ -86,6 +86,7 @@ const init = () => {
     Inicio.addEventListener("click", itemLink);
     Productos.addEventListener("click", itemLink);
     mostrarProductos(ProductosInfo);
+    window.addEventListener("scroll", itemLink);
 }
 
 

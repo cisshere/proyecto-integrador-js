@@ -39,7 +39,7 @@ html{
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 96px;
+    top: 74px;
     left: 0%;
     width: 25%;
     align-items: center;
@@ -240,8 +240,9 @@ html{
 }
 
 .ver-mas a{
-  background-color: #95260e;
-    padding: 0.75rem;
+  background-color: #000000;
+    padding: 0.7rem 4rem;
+    border-radius: 0.5rem;
     color: white;
     }
 
@@ -250,9 +251,9 @@ html{
     .ver-mas a:hover,
     .producto a:active,
     .ver-mas a:active{
-     background-color: black;
-     color: #95260e;
-     font-weight: bold;
+      background-color: #b54040;
+      color: #000000;
+      font-weight: bold;
     }
 
 
