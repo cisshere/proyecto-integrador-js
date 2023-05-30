@@ -1,10 +1,12 @@
 @media (max-width: 610px){
+
     .nav-list-secundario{
-        flex-direction: column;
+        display: none;
     }
-    
-    .btn-registro a{
-        font-size: 0.8rem;
+
+    .usuario{
+        display: flex;
+        width: 31px;
     }
 
 }
@@ -21,8 +23,12 @@
     }
 }
 
-@media (max-width: 874px) {
+@media (max-width: 800px) {
     .hero{
         flex-direction: column;
+    }
+    
+    .portada{
+        width: 90%;
     }
 }

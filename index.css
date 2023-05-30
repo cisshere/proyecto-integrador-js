@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&family=Slabo+27px&family=Unbounded:wght@400;500&display=swap');
 
 
+.usuario{
+  display: none;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -83,7 +87,7 @@ html{
 .btn-registro{
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .btn-registro a {
