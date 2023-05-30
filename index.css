@@ -188,11 +188,12 @@ html{
 }
 
 .producto {
+  display: flex;
   flex-direction: column;
-    display: flex;
     text-align: center;
     gap: 0.3rem;
     margin: 1rem;
+    align-items: center;
 }
 
 .producto img {
@@ -200,21 +201,24 @@ html{
   height: 12rem;
     margin: 0.75rem;
     border-radius: 0.938rem;
-    object-fit: cover;
     cursor: pointer;
 }
 
 .producto a {
-    background-color: #95260e;
-    padding: 0.5rem;
-    letter-spacing: 1px;
-    margin: 0.3rem 3rem;
+    background-color: #000000;
+    padding: 0.5rem 3rem;
+    letter-spacing: 2px;
     color: white;
   }
 
 
 .producto p {
   width: 13rem;
+}
+
+.tono{
+  color: gray;
+  margin: 0.7rem;
 }
 
 .precio{
