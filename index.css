@@ -162,12 +162,25 @@ html{
     margin: 3rem;
 }
 
+.lista-productos{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lista-productos p{
+  padding: 0.4rem;
+    background-color: #e77baa;
+    border-radius: 9px;
+}
+
 .productos-contenedor {
   display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    margin: 0 5rem;
+    margin: 2rem 5rem;
 }
 
 .producto {
