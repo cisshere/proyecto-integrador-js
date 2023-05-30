@@ -79,6 +79,8 @@ const mostrarProductos = (listaDeProductos) => {
     }).join("");
 } 
 
+const bolsaCompra = document.querySelector(".bolsa-compra");
+
 
 const init = () => {
     menuDespegable.addEventListener("click",despeglarMenu); 
@@ -87,6 +89,7 @@ const init = () => {
     Productos.addEventListener("click", itemLink);
     mostrarProductos(ProductosInfo);
     window.addEventListener("scroll", itemLink);
+    bolsaCompra.addEventListener("click", itemLink);
 }
 
 

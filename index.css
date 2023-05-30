@@ -47,6 +47,7 @@ html{
     padding: 2rem 1rem;
     z-index: 1;
     gap: 4rem;
+    font-size: 1.2rem;
   }
 
 .labios-rojos-logo {
@@ -68,7 +69,6 @@ html{
 .nav-item {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
 }
 
 .nav-item-link{
