@@ -21,7 +21,7 @@ html{
   display: flex;
   justify-content: space-between;
   background-color: #95260e; 
-  padding: 1rem;
+  padding: 0.3rem 1rem;
 }
 
 .menu {
@@ -200,12 +200,16 @@ html{
     align-items: center;
 }
 
-.producto img {
+.img-producto {
   width: 12rem;
   height: 12rem;
     margin: 0.75rem;
     border-radius: 0.938rem;
     cursor: pointer;
+}
+
+.nombre-producto {
+  width: 13rem;
 }
 
 .producto a {
@@ -214,11 +218,6 @@ html{
     letter-spacing: 2px;
     color: white;
   }
-
-
-.producto p {
-  width: 13rem;
-}
 
 .tono{
   color: gray;

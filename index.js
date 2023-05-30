@@ -59,14 +59,34 @@ const itemLink = () => {
     navListPrincipal.classList.add("nav-list-principal");
 } 
 
+const productosContenedor = document.querySelector(".productos-contenedor");
 
+const mostrarProductos = (listaDeProductos) => {
+    productosContenedor.innerHTML = listaDeProductos.map((producto) => {
+        const { img, alt, nombre, precio, tono} = producto
+
+        return `
+
+        <div class="producto">
+            <img  class="img-producto" src= ${img} alt= ${alt} >
+            <p class="nombre-producto"> ${nombre} </p>
+            <p class="precio"> $ ${precio} </p>
+            <p class="tono"> ${tono} </p>
+            <a href="">Comprar</a>
+        </div>
+
+        `
+    }).join("");
+} 
 
 
 const init = () => {
-    menuDespegable.addEventListener("click",despeglarMenu);
+    menuDespegable.addEventListener("click",despeglarMenu); 
     window.addEventListener("resize", onResize);
     Inicio.addEventListener("click", itemLink);
     Productos.addEventListener("click", itemLink);
+    mostrarProductos(ProductosInfo);
 }
+
 
 init();
