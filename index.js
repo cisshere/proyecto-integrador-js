@@ -28,6 +28,7 @@ const img = document.createElement('img');
         li.appendChild(a);
         ul.appendChild(li);
     }
+    
 
     navegadorMenu.appendChild(ul);
 }
@@ -57,6 +58,7 @@ const itemLink = () => {
     navListPrincipal.classList.remove("nav-desplegable");
     navListPrincipal.classList.add("nav-list-principal");
 } 
+
 
 
 
