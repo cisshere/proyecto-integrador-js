@@ -28,8 +28,6 @@ const img = document.createElement('img');
         li.appendChild(a);
         ul.appendChild(li);
     }
-    
-
     navegadorMenu.appendChild(ul);
 }
 
@@ -41,6 +39,7 @@ const navListPrincipal = document.querySelector("#nav");
 const despeglarMenu = () => {
     navListPrincipal.classList.toggle("nav-list-principal");
     navListPrincipal.classList.toggle("nav-desplegable");
+    navListPrincipal.classList.add("prueba");
 }
 
 const onResize = () => {
@@ -80,6 +79,12 @@ const mostrarProductos = (listaDeProductos) => {
 } 
 
 const bolsaCompra = document.querySelector(".bolsa-compra");
+const carritoVacio = document.querySelector(".carrito");
+
+const carritoCompra = () =>{
+    carritoVacio.classList.toggle("carrito-vacio");
+    carritoVacio.textContent.toggle ="Carrito vacio";
+}
 
 
 const init = () => {
@@ -90,6 +95,7 @@ const init = () => {
     mostrarProductos(ProductosInfo);
     window.addEventListener("scroll", itemLink);
     bolsaCompra.addEventListener("click", itemLink);
+    bolsaCompra.addEventListener("click", carritoCompra);
 }
 
 

@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&family=Slabo+27px&family=Unbounded:wght@400;500&display=swap');
 
+
+/* .prueba{
+  transition: all .3s linear;
+} */
+
+.carrito-vacio{
+  position: absolute;
+    top: 75px;
+    background-color: aqua;
+    right: 5rem;
+    padding: 1rem;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -53,6 +67,7 @@ html{
 .labios-rojos-logo {
   height: 4rem;
   width: 11rem;
+  margin-right: 3rem;
 }
 
 .nav-list-principal{
