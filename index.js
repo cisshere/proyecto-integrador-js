@@ -83,7 +83,6 @@ const carritoVacio = document.querySelector(".carrito");
 
 const carritoCompra = () =>{
     carritoVacio.classList.toggle("carrito-vacio");
-    carritoVacio.textContent.toggle ="Carrito vacio";
 }
 
 

@@ -5,14 +5,6 @@
   transition: all .3s linear;
 } */
 
-.carrito-vacio{
-  position: absolute;
-    top: 75px;
-    background-color: aqua;
-    right: 5rem;
-    padding: 1rem;
-}
-
 
 *{
     margin: 0;
@@ -75,12 +67,6 @@ html{
   gap: 2rem;
 }
 
-
-.nav-list-secundario{
-  display: flex;
-  gap: 1rem;
-  }
-
 .nav-item {
   display: flex;
   align-items: center;
@@ -105,11 +91,24 @@ html{
 .btn-registro{
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-.btn-registro a {
-  font-size: 1rem;
+.compras {
+  margin-top: 5px;
+}
+
+.carrito {
+  display: none;
+}
+
+.carrito-vacio{
+  display: flex;
+  position: absolute;
+    top: 75px;
+    background-color: aqua;
+    right: 5rem;
+    padding: 1rem;
 }
 
 .bolsa-compra {
@@ -117,6 +116,14 @@ html{
   cursor: pointer;
 }
 
+.nav-list-secundario{
+  display: flex;
+  gap: 1rem;
+  }
+
+  .btn-registro a {
+    font-size: 1rem;
+  }
 
 /* ------------- PORTADA ---------------- */
 
