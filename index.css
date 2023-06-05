@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&family=Slabo+27px&family=Unbounded:wght@400;500&display=swap');
 
 
-/* .prueba{
-  transition: all .3s linear;
-} */
+ .prueba{
+  transform: translate(0%);
+  transition: all 0.3s linear;
+} 
 
 
 *{
@@ -18,7 +19,7 @@ html{
   scroll-behavior: smooth;
 }
 
-#Inicio {
+#header {
   position: fixed;
   width: 100%;
 }
@@ -91,7 +92,7 @@ html{
 .btn-registro{
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .compras {
@@ -104,11 +105,13 @@ html{
 
 .carrito-vacio{
   display: flex;
+  flex-direction: column;
   position: absolute;
     top: 75px;
     background-color: aqua;
     right: 5rem;
     padding: 1rem;
+    gap: 1rem;
 }
 
 .bolsa-compra {
@@ -124,6 +127,21 @@ html{
   .btn-registro a {
     font-size: 1rem;
   }
+
+.producto-carrito{
+  display: flex;
+  gap: 2rem;
+}
+
+.producto-carrito img {
+  width: 4rem;
+}
+
+.datos-producto{
+  display: flex;
+  flex-direction: column;
+}
+
 
 /* ------------- PORTADA ---------------- */
 
