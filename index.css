@@ -142,6 +142,11 @@ html{
   flex-direction: column;
 }
 
+.productos-contenedor-carrito {
+  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
 
 /* ------------- PORTADA ---------------- */
 

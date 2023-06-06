@@ -4,33 +4,40 @@ const saveCart = () => {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
+
 const contenedorProductosCarrito = document.querySelector(".productos-contenedor-carrito");
 
-// Función para agregar un producto al carrito
-function addToCart(producto) {
-  // Crear un nuevo elemento de lista
-  
-  const listItem = document.createElement('div');
+function agregarAlCarrito(producto) {
 
-  listItem.innerHTML = `      
-  <div class="producto-carrito">
-  <img src= ${producto.img} alt="${producto.alt}">
+  const div = document.createElement('div');
+  div.classList.add("producto-carrito");
+
+  const { img, alt, nombre, precio, cantidad} = producto
+
+  div.innerHTML = `
+  <img src= ${img} alt="${alt}">
 
   <div class="datos-producto"> 
-  <p>${producto.nombre}</p>
-  <p>$ ${producto.precio}</p>
-  <p>cantidad = ${producto.cantidad}</p>
+  <p>${nombre}</p>
+  <p>$ ${precio}</p>
+  <p>cantidad = ${cantidad}</p>
   </div>
 
   </div> `
-  contenedorProductosCarrito.appendChild(listItem);
+  contenedorProductosCarrito.appendChild(div);
 }
 
-const buyButtons = document.querySelectorAll('.btn-comprar');
+const btnComprar = document.querySelectorAll('.btn-comprar');
 
-buyButtons.forEach((button, indice) => {
-  button.addEventListener('click', () => {
-    const producto = ProductosInfo[indice];
-    addToCart(producto);
+btnComprar.forEach((button, indice) => {
+
+    button.addEventListener('click', () => {
+      const producto = ProductosInfo[indice];
+      agregarAlCarrito(producto);
+      localStorage.setItem('cart',JSON.stringify(producto));
+    });
+
   });
-});
+
+
+  saveCart();

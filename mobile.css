@@ -34,3 +34,9 @@
         width: 90%;
     }
 }
+
+@media (min-width: 1367px){
+    .navegador{
+        justify-content: space-around;
+    }
+}
