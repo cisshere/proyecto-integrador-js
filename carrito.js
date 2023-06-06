@@ -6,49 +6,31 @@ const saveCart = () => {
 
 const contenedorProductosCarrito = document.querySelector(".productos-contenedor-carrito");
 
-const renderCart = () => {
+// Función para agregar un producto al carrito
+function addToCart(producto) {
+  // Crear un nuevo elemento de lista
+  
+  const listItem = document.createElement('div');
 
-    contenedorProductosCarrito.innerHTML = cart.map((productoCarrito => {
-        const { img, alt, nombre, precio, tono, cantidad} = productoCarrito;
-        return `
-        
-        <div class="producto-carrito">
-        <img src= ${img} alt="${alt}">
+  listItem.innerHTML = `      
+  <div class="producto-carrito">
+  <img src= ${producto.img} alt="${producto.alt}">
 
-        <div class="datos-producto"> 
-        <p>${nombre}</p>
-        <p>$ ${precio}</p>
-        <p>cantidad = ${cantidad}</p>
-        </div>
+  <div class="datos-producto"> 
+  <p>${producto.nombre}</p>
+  <p>$ ${producto.precio}</p>
+  <p>cantidad = ${producto.cantidad}</p>
+  </div>
 
-        </div> `
-    })).join("");
+  </div> `
+  contenedorProductosCarrito.appendChild(listItem);
 }
 
-const dataProducto = (producto) => {
-    const {id, nombre, precio, img} = producto;
-    return {id, nombre, precio, img};
-}
+const buyButtons = document.querySelectorAll('.btn-comprar');
 
-const productoExiste = (producto) =>{
-    return cart.find( (item) =>{
-        return item.id === producto.id;
-    });
-};
-
-const btnComprar = document.querySelector(".btn-comprar");
-
-const agregarProducto = (e) => {
-    const producto = dataProducto(e.target.dataset);
-
-    if(productoExiste(producto)){
-        
-    }
-}
-
-
-const initt = () => {
-    document.addEventListener("DOMContentLoaded", renderCart);
-}
-
-initt();
+buyButtons.forEach((button, indice) => {
+  button.addEventListener('click', () => {
+    const producto = ProductosInfo[indice];
+    addToCart(producto);
+  });
+});
