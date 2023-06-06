@@ -69,7 +69,7 @@ const productosContenedor = document.querySelector(".productos-contenedor");
 
 const mostrarProductos = (listaDeProductos) => {
     productosContenedor.innerHTML = listaDeProductos.map((producto) => {
-        const { img, alt, nombre, precio, tono} = producto
+        const { img, alt, nombre, precio, tono, id} = producto
 
         return `
 
@@ -78,54 +78,30 @@ const mostrarProductos = (listaDeProductos) => {
             <p class="nombre-producto"> ${nombre} </p>
             <p class="precio"> $ ${precio} </p>
             <p class="tono"> ${tono} </p>
-            <a class="btn-comprar" href="">Comprar</a>
+            
+            <button
+            class="btn-comprar"
+            data-id="${id}"
+            data-name="${nombre}"
+            data-precio="${precio}"
+            data-img="${img}">
+        Comprar
+        </button>
+
         </div>
 
         `
     }).join("");
 } 
 
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-const saveCart = () => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-const contenedorProductosCarrito = document.querySelector(".productos-contenedor-carrito");
-
-const renderCart = () => {
-
-    contenedorProductosCarrito.innerHTML = cart.map((productoCarrito => {
-        const { img, alt, nombre, precio, tono, cantidad} = productoCarrito;
-        return `
-        
-        <div class="producto-carrito">
-        <img src= ${img} alt="${alt}">
-
-        <div class="datos-producto"> 
-        <p>${nombre}</p>
-        <p>$ ${precio}</p>
-        <p>cantidad = ${cantidad}</p>
-        </div>
-
-        </div> `
-    })).join("");
-}
-
-const btnComprar = document.querySelector(".btn-comprar");
-
 
 const init = () => {
     menuDespegable.addEventListener("click",despeglarMenu); 
     window.addEventListener("resize", onResize);
-    /* Inicio.addEventListener("click", removeMenuDes);
-    Productos.addEventListener("click", removeMenuDes); */
-    mostrarProductos(ProductosInfo);
     window.addEventListener("scroll", removeMenuDes);
     bolsaCompra.addEventListener("click", carritoCompra);
     navItem.addEventListener("click", removeMenuDes);
-
-    document.addEventListener("DOMContentLoaded", renderCart);
+    mostrarProductos(ProductosInfo);
 }
 
 

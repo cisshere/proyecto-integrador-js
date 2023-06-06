@@ -252,7 +252,7 @@ html{
   width: 13rem;
 }
 
-.producto a {
+.btn-comprar {
     background-color: #000000;
     padding: 0.5rem 3rem;
     letter-spacing: 2px;
@@ -287,13 +287,14 @@ html{
     }
 
 
-    .producto a:hover,
+    .btn-comprar:hover,
     .ver-mas a:hover,
-    .producto a:active,
+    .btn-comprar:active,
     .ver-mas a:active{
       background-color: #b54040;
       color: #000000;
       font-weight: bold;
+      cursor: pointer;
     }
 
 

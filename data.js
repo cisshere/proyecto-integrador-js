@@ -1,12 +1,15 @@
 const ProductosInfo = [
 
-    { img : "img/productos/gloss-may.jpg",
+    { 
+      id : 1,
+      img : "img/productos/gloss-may.jpg",
       alt : "gloss-may",
       nombre : "Maybelline Gloss con acido hialurónico",
       precio : 8000,
       tono : "Tono: Pétalo",
 },
 {
+    id: 2,
     img : "img/productos/labial-velvet.png",
     alt: "labial velvet",
     nombre : "Labial color HD velvet maxima duracion",
@@ -14,6 +17,7 @@ const ProductosInfo = [
     tono : "Tono: Rojo ésika",
 },
 {
+    id : 3,
     img : "img/productos/labial-superstay-24hs.jpg",
     alt : "labial superstar 24hs",
     nombre : "Maybelline Labial 24Hs",
@@ -21,6 +25,7 @@ const ProductosInfo = [
     tono : "Tono: Café",
 },
 {
+    id : 4,
     img : "img/productos/labial-rojo.png",
     alt : "labial sensat",
     nombre : "Maybelline Labial Color Sensat Liquid ",
@@ -28,6 +33,7 @@ const ProductosInfo = [
     tono : "Tono: Borgoña",
 },
 {
+    id : 5,
     img : "img/productos/rojo-seductor.png",
     alt : "labial super stay",
     nombre : "Labial maxima duracion colorfix",
@@ -35,6 +41,7 @@ const ProductosInfo = [
     tono : "Tono: Rojo seductor",
 },
 {
+    id : 6,
     img : "img/productos/rhode-gloss.png",
     alt : "gloss rhode",
     nombre : "Gloss Rhode Hailey Bieber",
@@ -42,6 +49,7 @@ const ProductosInfo = [
     tono : "Tono: Brillos",
 },
 {
+    id : 7,
     img : "img/productos/labial-nivea.jpg",
     alt : "labial nivea",
     nombre : "Protector Labial Nivea humectante",
@@ -49,6 +57,7 @@ const ProductosInfo = [
     tono : "Tono: Blackberry",
 },
 {
+    id : 8,
     img : "img/productos/mascarilla-sandia.png",
     alt : "mascarilla sandia",
     nombre : "Mascarilla con ácido hialurónico",
@@ -56,6 +65,7 @@ const ProductosInfo = [
     tono : "Aroma: Sandia",
 },
 {
+    id : 9,
     img : "img/productos/mascarilla-coco.png",
     alt : "mascarilla coco ojos",
     nombre : "Mascarilla para ojos humectante",
