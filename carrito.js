@@ -22,19 +22,21 @@ const crearProducto = (producto) => {
   contenedorProductosCarrito.appendChild(div);
 }
 
-
 const btnComprar = document.querySelectorAll('.btn-comprar');
 
 btnComprar.forEach((button, i) => {
 
     button.addEventListener('click', () => {
       const producto = ProductosInfo[i];
+
+      const productoExiste = listaCarrito.find(item => item.id === producto.id);
      
-      if (listaCarrito.find((item) => item.id === producto.id)) {
-        producto.cantidad = +1 ;
+      if (productoExiste) {
+        productoExiste.cantidad += 1;
         console.log("Existe");
     } else {
         crearProducto(producto);
+        producto.cantidad = 1;
       listaCarrito.push(producto);
       localStorage.setItem("carrito", JSON.stringify(listaCarrito));
       }

@@ -33,6 +33,10 @@
     .portada{
         width: 90%;
     }
+
+    .beneficios-contenedor, .contacto{
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 1367px){
