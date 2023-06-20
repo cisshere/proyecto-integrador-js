@@ -1,9 +1,4 @@
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-const saveCart = () => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-}
-
+var listaCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 const contenedorProductosCarrito = document.querySelector(".productos-contenedor-carrito");
 
@@ -34,10 +29,8 @@ btnComprar.forEach((button, indice) => {
     button.addEventListener('click', () => {
       const producto = ProductosInfo[indice];
       agregarAlCarrito(producto);
-      localStorage.setItem('cart',JSON.stringify(producto));
+      listaCarrito.push(producto);
+      localStorage.setItem("carrito", JSON.stringify(listaCarrito));
     });
 
   });
-
-
-  saveCart();
