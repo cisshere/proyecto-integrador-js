@@ -101,7 +101,7 @@ const init = () => {
     window.addEventListener("scroll", removeMenuDes);
     bolsaCompra.addEventListener("click", carritoCompra);
     navItem.addEventListener("click", removeMenuDes);
-    mostrarProductos(ProductosInfo);
+    mostrarProductos(productosInfo);
 }
 
 
