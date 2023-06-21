@@ -50,7 +50,7 @@ btnComprar.forEach((button, i) => {
     // tengo que actualizar la lista de la pantalla, como hago eso?
     // llamo al mostrarCarrito
 
-    if (indice) {
+    if (indice !== undefined) {
       listaCarrito[indice].cantidad += 1;
     } else {
       producto.cantidad = 1;
