@@ -18,7 +18,11 @@ const mostrarCarrito = () => {
       <div class="datos-producto"> 
         <p>${nombre}</p>
         <p>$ ${precio}</p>
-        <p>cantidad = ${cantidad}</p>
+        <div class="cambiarCantidad">
+        <button> - </button>
+        <p> ${cantidad}</p>
+        <button> + </button>
+        </div>
       </div>`;
     contenedorProductosCarrito.appendChild(div);
   });
@@ -38,9 +42,11 @@ btnComprar.forEach((button, i) => {
     // creo una variable para guardar el indice para usarlo despues cuando actualizo el carrito
 
     let indice;
+    console.log(indice);
     listaCarrito.forEach((item, index) => {
       if(item.id === producto.id){
         indice = index;
+        console.log(indice);
       }
     });
 
@@ -51,6 +57,7 @@ btnComprar.forEach((button, i) => {
     // llamo al mostrarCarrito
 
     if (indice !== undefined) {
+      console.log(indice);
       listaCarrito[indice].cantidad += 1;
     } else {
       producto.cantidad = 1;

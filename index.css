@@ -131,6 +131,8 @@ html{
 .producto-carrito{
   display: flex;
   gap: 1rem;
+  width: 15rem;
+    height: 4.5rem;
 }
 
 .producto-carrito img {
@@ -147,6 +149,15 @@ html{
   gap: 0.5rem;
     display: flex;
     flex-direction: column;
+}
+
+.cambiarCantidad {
+  display: flex;
+    gap: 0.3rem;
+}
+
+.cambiarCantidad button {
+  padding: 0px 5px;
 }
 
 /* ------------- PORTADA ---------------- */
