@@ -95,30 +95,6 @@ html{
   gap: 1rem;
 }
 
-.compras {
-  margin-top: 5px;
-}
-
-.carrito {
-  display: none;
-}
-
-.carrito-vacio{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-    top: 75px;
-    background-color: aqua;
-    right: 5rem;
-    padding: 1rem;
-    gap: 1rem;
-}
-
-.bolsa-compra {
-  height: 2rem;
-  cursor: pointer;
-}
-
 .nav-list-secundario{
   display: flex;
   gap: 1rem;
@@ -128,10 +104,40 @@ html{
     font-size: 1rem;
   }
 
+  .bolsa-compra {
+    height: 2rem;
+    cursor: pointer;
+  }
+
+  /**  carrito **/
+
+  .des {
+    display: flex;
+  }
+
+  .des-carrito{
+    display: none;
+  }
+
+.carrito {
+  display: none;
+}
+
+.carrito-vacio{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+    top: 74px;
+    background-color: aqua;
+    right: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
 .producto-carrito{
   display: flex;
   gap: 1rem;
-  width: 15rem;
+  width: 17rem;
     height: 4.5rem;
 }
 
@@ -234,10 +240,11 @@ html{
     gap: 1rem;
 }
 
-.lista-productos p{
+.lista-productos button{
   padding: 0.4rem;
     background-color: #e77baa;
     border-radius: 9px;
+    cursor: pointer;
 }
 
 .productos-contenedor {

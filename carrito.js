@@ -4,8 +4,18 @@ const contenedorProductosCarrito = document.querySelector(
   ".productos-contenedor-carrito"
 );
 
+/* actualizacionDeCarrito = () => {
+
+  if(listaCarrito === []){
+    des.classList.remove("des-carrito");
+  } else {
+    des.classList.add("des-carrito");
+  }
+} */
+
 const mostrarCarrito = () => {
   contenedorProductosCarrito.innerHTML = "";
+  //des.classList.add("des-carrito");
 
   listaCarrito.forEach((producto) => {
     const div = document.createElement("div");
@@ -26,7 +36,18 @@ const mostrarCarrito = () => {
       </div>`;
     contenedorProductosCarrito.appendChild(div);
   });
+
+
 };
+
+const actualizarCarrito = () =>{
+  const des = document.querySelector(".des");
+  if(listaCarrito.length === " "){
+    des.classList.remove("des-carrito");
+  } else {
+    des.classList.add("des-carrito");
+  }
+}
 
 const btnComprar = document.querySelectorAll(".btn-comprar");
 
@@ -55,11 +76,11 @@ btnComprar.forEach((button, i) => {
     // tengo que actualizar el local storage para mantener los datos, tengo que hacer algo mas?
     // tengo que actualizar la lista de la pantalla, como hago eso?
     // llamo al mostrarCarrito
-
     if (indice !== undefined) {
       console.log(indice);
       listaCarrito[indice].cantidad += 1;
     } else {
+      //des.classList.remove("des-carrito");
       producto.cantidad = 1;
       listaCarrito.push(producto);
     }
@@ -69,4 +90,5 @@ btnComprar.forEach((button, i) => {
   });
 });
 
+actualizarCarrito();
 mostrarCarrito();
