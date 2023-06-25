@@ -111,13 +111,10 @@ html{
 
   /**  carrito **/
 
-  .des {
-    display: flex;
-  }
-
-  .des-carrito{
-    display: none;
-  }
+ #mensaje-carrito-vacio {
+  display: none;
+  text-align: center;
+ }
 
 .carrito {
   display: none;
@@ -132,6 +129,12 @@ html{
     right: 1rem;
     padding: 1rem;
     gap: 1rem;
+    width: 20rem;
+    
+}
+
+.producto-nombre{
+  width: 11rem;
 }
 
 .producto-carrito{
@@ -141,7 +144,7 @@ html{
     height: 4.5rem;
 }
 
-.producto-carrito img {
+.prod-carrito-img {
   width: 4rem;
   height: 4rem;
 }
@@ -155,6 +158,8 @@ html{
   gap: 0.5rem;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    max-height: 20rem;
 }
 
 .cambiarCantidad {
@@ -166,6 +171,14 @@ html{
   padding: 0px 5px;
 }
 
+.tacho{
+  height: 1rem;
+  width: 1rem;
+}
+
+.btn-tacho-resto {
+  display: none;
+}
 /* ------------- PORTADA ---------------- */
 
 .hero{

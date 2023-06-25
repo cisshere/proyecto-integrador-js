@@ -3,19 +3,29 @@ var listaCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const contenedorProductosCarrito = document.querySelector(
   ".productos-contenedor-carrito"
 );
+const mensajeCarritoVacio = document.getElementById('mensaje-carrito-vacio');
+const btnTachoResto = document.querySelector(".btn-tacho-resto");
 
-/* actualizacionDeCarrito = () => {
-
-  if(listaCarrito === []){
-    des.classList.remove("des-carrito");
-  } else {
-    des.classList.add("des-carrito");
+const restarCantidad = (producto) => {
+  if (producto.cantidad > 1) {
+    producto.cantidad -= 1;
+    // btnTachoResto.style.display = "none";
+    mostrarCarrito();
   }
-} */
+  /*if (producto == 1){
+    btnTachoResto.style.display = "flex";
+  } */
+  localStorage.setItem("carrito", JSON.stringify(listaCarrito));
+};
+
+const sumarCantidad = (producto) => {
+  producto.cantidad += 1;
+  mostrarCarrito();
+  localStorage.setItem("carrito", JSON.stringify(listaCarrito));
+};
 
 const mostrarCarrito = () => {
   contenedorProductosCarrito.innerHTML = "";
-  //des.classList.add("des-carrito");
 
   listaCarrito.forEach((producto) => {
     const div = document.createElement("div");
@@ -24,30 +34,48 @@ const mostrarCarrito = () => {
     const { img, alt, nombre, precio, cantidad } = producto;
 
     div.innerHTML = `
-      <img src= ${img} alt="${alt}">
+      <img class="prod-carrito-img" src=${img} alt="${alt}">
       <div class="datos-producto"> 
-        <p>${nombre}</p>
+        <p class="producto-nombre">${nombre}</p>
         <p>$ ${precio}</p>
+
         <div class="cambiarCantidad">
-        <button> - </button>
-        <p> ${cantidad}</p>
-        <button> + </button>
+          <button class="btn-restar"> - </button>
+          <button class="btn-tacho-resto">
+           <img class="tacho-resto" src="img/tacho.png" alt="tacho"> 
+          </button>
+          <p> ${cantidad}</p>
+          <button class="btn-sumar"> + </button>
         </div>
-      </div>`;
+
+      </div>
+      
+      <div>
+        <button class="btn-tacho">
+         <img class="tacho" src="img/tacho.png" alt="tacho"> </button>
+        </div>
+        `;
     contenedorProductosCarrito.appendChild(div);
+
+    const btnRestar = div.querySelector(".btn-restar");
+    const btnSumar = div.querySelector(".btn-sumar");
+
+    btnRestar.addEventListener("click", () => {
+      restarCantidad(producto);
+    });
+
+    btnSumar.addEventListener("click", () => {
+      sumarCantidad(producto);
+    });
   });
 
+  if (listaCarrito.length === 0) {
+    mensajeCarritoVacio.style.display = "block";
+  } else {
+    mensajeCarritoVacio.style.display = "none";
+  }
 
 };
-
-const actualizarCarrito = () =>{
-  const des = document.querySelector(".des");
-  if(listaCarrito.length === " "){
-    des.classList.remove("des-carrito");
-  } else {
-    des.classList.add("des-carrito");
-  }
-}
 
 const btnComprar = document.querySelectorAll(".btn-comprar");
 
@@ -63,11 +91,9 @@ btnComprar.forEach((button, i) => {
     // creo una variable para guardar el indice para usarlo despues cuando actualizo el carrito
 
     let indice;
-    console.log(indice);
     listaCarrito.forEach((item, index) => {
       if(item.id === producto.id){
         indice = index;
-        console.log(indice);
       }
     });
 
@@ -80,15 +106,18 @@ btnComprar.forEach((button, i) => {
       console.log(indice);
       listaCarrito[indice].cantidad += 1;
     } else {
-      //des.classList.remove("des-carrito");
       producto.cantidad = 1;
       listaCarrito.push(producto);
     }
+
+    
     
     localStorage.setItem("carrito", JSON.stringify(listaCarrito));
     mostrarCarrito();
   });
 });
 
-actualizarCarrito();
 mostrarCarrito();
+
+
+

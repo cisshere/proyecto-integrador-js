@@ -75,7 +75,7 @@ const productosInfo = [
     id: 9,
     img: "img/productos/mascarilla-coco.png",
     alt: "mascarilla coco ojos",
-    nombre: "Mascarilla para ojos ",
+    nombre: "Mascarilla ojeras ",
     precio: 3000,
     tono: "Aroma: Coco",
     articulo: "mascarilla",
