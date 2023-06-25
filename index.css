@@ -227,10 +227,14 @@ html{
 
 /*************** PRODUCTOS *************/
 
-#titulo-productos {
+.cards {
+  padding-top: 3rem;
+}
+
+.titulo-productos {
   text-align: center;
   font-size: 1.7rem;
-    margin: 3rem;
+    padding: 3rem;
 }
 
 .lista-productos{
@@ -325,8 +329,12 @@ html{
     /**************** BENEFICIOS ************************/
 
     .beneficios {
-      background-image: url(img/fondo.jpg);
-      margin: 2rem 0;
+      padding-top: 5rem;
+    text-align: center;
+    }
+
+    .beneficios-titulo {
+     padding-bottom: 1rem;
     }
 
     .beneficios img {
@@ -334,6 +342,7 @@ html{
     }
 
     .beneficios-contenedor {
+      background-image: url(img/fondo.jpg);
       display: flex;
     flex-direction: row;
     align-items: center;
@@ -366,6 +375,7 @@ html{
       gap: 3rem;
       align-items: center;
       justify-content: center;
+      padding-top: 3rem;
     }
 
     .form {

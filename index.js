@@ -1,6 +1,6 @@
 const navegadorMenu = document.querySelector(".menu");
 
-const elementos = ['Inicio', 'Productos', 'Beneficio', 'Contacto'];
+const elementos = ['Inicio', 'Productos', 'Beneficios', 'Contacto'];
     
 
  const menu = () => {
@@ -53,6 +53,9 @@ const onResize = () => {
 
  const Inicio = document.querySelector("#link-Inicio");
  const Productos = document.querySelector("#link-Productos");
+ const Beneficios = document.querySelector("#link-Beneficios");
+ const Contacto = document.querySelector("#link-Contacto");
+
 
 const removeMenuDes = () => {
     
