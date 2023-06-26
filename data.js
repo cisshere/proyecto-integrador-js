@@ -57,7 +57,7 @@ const productosInfo = [
     id: 7,
     img: "img/productos/labial-nivea.jpg",
     alt: "labial nivea",
-    nombre: "Nivea humectante",
+    nombre: "Nivea balsamo",
     precio: 3000,
     tono: "Tono: Blackberry",
     articulo: "labial",
