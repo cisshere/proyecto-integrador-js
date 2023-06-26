@@ -1,32 +1,39 @@
 var listaCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+const guardarCarritoEnLocalStorage = () => {
+  localStorage.setItem("carrito", JSON.stringify(listaCarrito));
+}
+
 const contenedorProductosCarrito = document.querySelector(".productos-contenedor-carrito");
 const mensajeCarritoVacio = document.getElementById('mensaje-carrito-vacio');
-
 
 const restarCantidad = (producto) => {
   if (producto.cantidad > 1) {
     producto.cantidad -= 1;
     mostrarCarrito();
   } 
-  localStorage.setItem("carrito", JSON.stringify(listaCarrito));
+  guardarCarritoEnLocalStorage();
 };
 
 const sumarCantidad = (producto) => {
   producto.cantidad += 1;
   mostrarCarrito();
-  localStorage.setItem("carrito", JSON.stringify(listaCarrito));
+  guardarCarritoEnLocalStorage();
 };
 
 const listaCarritoVacia = () =>{
-
   if (listaCarrito.length === 0) {
     mensajeCarritoVacio.style.display = "block";
   } else {
     mensajeCarritoVacio.style.display = "none";
   }
-
 }
+
+const borrarProducto = (producto, index) => {
+  listaCarrito.splice(index, 1);
+  guardarCarritoEnLocalStorage();
+  mostrarCarrito();
+};
 
 const mostrarCarrito = () => {
   contenedorProductosCarrito.innerHTML = "";
@@ -64,21 +71,16 @@ const mostrarCarrito = () => {
     const btnRestar = div.querySelector(".btn-restar");
     const btnSumar = div.querySelector(".btn-sumar");
     const btnTachoResto = div.querySelector(".btn-tacho-resto");
-    const tachoProducto = div.querySelector(".btn-tacho")
-
-
-    btnTachoResto.addEventListener("click", () => {
-      listaCarrito.splice(index, 1); 
-      localStorage.setItem("carrito", JSON.stringify(listaCarrito)); 
-      mostrarCarrito(); 
-    });
+    const tachoProducto = div.querySelector(".btn-tacho");
+    const productoCarrito = document.querySelector("producto-carrito");
 
     tachoProducto.addEventListener("click", () => {
-      listaCarrito.splice(index, 1); 
-      localStorage.setItem("carrito", JSON.stringify(listaCarrito)); 
-      mostrarCarrito(); 
+      borrarProducto(productoCarrito, index);
     });
 
+    btnTachoResto.addEventListener("click", () => {
+      borrarProducto(productoCarrito, index);
+    });
 
     btnRestar.addEventListener("click", () => {
       restarCantidad(producto);
@@ -121,12 +123,9 @@ btnComprar.forEach((button, i) => {
       listaCarrito.push(producto);
     }
     
-    localStorage.setItem("carrito", JSON.stringify(listaCarrito));
+    guardarCarritoEnLocalStorage();
     mostrarCarrito();
   });
 });
 
 mostrarCarrito();
-
-
-
