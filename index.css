@@ -167,8 +167,9 @@ html{
     gap: 0.3rem;
 }
 
-.cambiarCantidad button {
-  padding: 0px 5px;
+.btn-sumar, .btn-restar {
+  padding: 0px 0.3rem;
+  font-weight: bold;
 }
 
 .tacho{
@@ -176,9 +177,16 @@ html{
   width: 1rem;
 }
 
-.btn-tacho-resto {
-  display: none;
+
+.tacho-resto {
+  width: 1rem;
+    height: 1rem;
 }
+
+.btn-tacho-resto{
+  padding: 0;
+}
+
 /* ------------- PORTADA ---------------- */
 
 .hero{
