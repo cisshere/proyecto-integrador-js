@@ -51,6 +51,7 @@ const onResize = () => {
     }
 }
 
+
  const Inicio = document.querySelector("#link-Inicio");
  const Productos = document.querySelector("#link-Productos");
  const Beneficios = document.querySelector("#link-Beneficios");
@@ -102,14 +103,11 @@ const mostrarProductos = (listaDeProductos) => {
     }).join("");
 } 
 
-
 const init = () => {
     menuDespegable.addEventListener("click",despeglarMenu); 
     window.addEventListener("resize", onResize);
     window.addEventListener("scroll",removeMenuDes);
-
     window.addEventListener("scroll",removeListaProductosCarrito);
-
     bolsaCompra.addEventListener("click", carritoCompra);
     navItem.addEventListener("click", removeMenuDes);
     mostrarProductos(productosInfo);

@@ -105,6 +105,16 @@ html{
   gap: 1rem;
   }
 
+.nav-list-secundario-des {
+  display: flex;
+    top: 74px;
+    position: absolute;
+    top: 74px;
+    flex-direction: column;
+    right: 4rem;
+    background-color: #a14242;
+}
+
   .btn-registro a {
     font-size: 1rem;
   }

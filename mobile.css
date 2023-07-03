@@ -9,15 +9,15 @@
         display: none;
     }
 
-    .nav-list-secundario{
+     .nav-list-secundario{
         display: none;
-    }
+    } 
 
     .usuario{
         display: flex;
         width: 31px;
         margin-top: 3px;
-    }
+    } 
 
     .labios-rojos-logo{
         margin-right: 0;
