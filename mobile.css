@@ -23,12 +23,6 @@
         margin-right: 0;
     }
 
-    footer{
-        flex-direction: column;
-        gap: 2rem;
-    }
-    
-
 }
 
 @media (max-width: 800px) {
@@ -43,6 +37,12 @@
     .beneficios-contenedor, .contacto{
         flex-direction: column;
     }
+
+    footer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
 }
 
 @media (min-width: 1367px){
