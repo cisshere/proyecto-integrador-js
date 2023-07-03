@@ -22,7 +22,13 @@
     .labios-rojos-logo{
         margin-right: 0;
     }
+
+    footer{
+        flex-direction: column;
+        gap: 2rem;
+    }
     
+
 }
 
 @media (max-width: 800px) {
