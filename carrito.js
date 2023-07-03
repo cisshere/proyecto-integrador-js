@@ -6,6 +6,7 @@ const guardarCarritoEnLocalStorage = () => {
 
 const contenedorProductosCarrito = document.querySelector(".productos-contenedor-carrito");
 const mensajeCarritoVacio = document.getElementById('mensaje-carrito-vacio');
+const btnBotonesLista = document.querySelector(".btn-botones-lista"); 
 
 const restarCantidad = (producto) => {
   if (producto.cantidad > 1) {
@@ -24,8 +25,11 @@ const sumarCantidad = (producto) => {
 const listaCarritoVacia = () =>{
   if (listaCarrito.length === 0) {
     mensajeCarritoVacio.style.display = "block";
+    btnBotonesLista.style.display = "none";
+
   } else {
     mensajeCarritoVacio.style.display = "none";
+    btnBotonesLista.style.display = "flex";
   }
 }
 

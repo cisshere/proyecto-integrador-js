@@ -41,7 +41,7 @@ const navItem = document.querySelector(".nav-item-link");
 const despeglarMenu = () => {
     navListPrincipal.classList.toggle("nav-list-principal");
     navListPrincipal.classList.toggle("nav-desplegable");
-    carritoVacio.classList.remove("carrito-vacio");
+    carritoVacio.classList.remove("lista-productos-carrito");
 }
 
 const onResize = () => {
@@ -56,6 +56,10 @@ const onResize = () => {
  const Beneficios = document.querySelector("#link-Beneficios");
  const Contacto = document.querySelector("#link-Contacto");
 
+ const removeListaProductosCarrito = () => {
+    
+    carritoVacio.classList.remove("lista-productos-carrito");
+} 
 
 const removeMenuDes = () => {
     
@@ -63,8 +67,9 @@ const removeMenuDes = () => {
     navListPrincipal.classList.add("nav-list-principal");
 } 
 
+
 const carritoCompra = () =>{
-    carritoVacio.classList.toggle("carrito-vacio");
+    carritoVacio.classList.toggle("lista-productos-carrito");
     removeMenuDes();
 }
 
@@ -101,7 +106,10 @@ const mostrarProductos = (listaDeProductos) => {
 const init = () => {
     menuDespegable.addEventListener("click",despeglarMenu); 
     window.addEventListener("resize", onResize);
-    window.addEventListener("scroll", removeMenuDes);
+    window.addEventListener("scroll",removeMenuDes);
+
+    window.addEventListener("scroll",removeListaProductosCarrito);
+
     bolsaCompra.addEventListener("click", carritoCompra);
     navItem.addEventListener("click", removeMenuDes);
     mostrarProductos(productosInfo);
