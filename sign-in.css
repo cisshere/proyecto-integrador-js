@@ -45,10 +45,12 @@ body {
 
 .cuenta {
     color: white;
+
 }
 
 .cuenta:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .home{
