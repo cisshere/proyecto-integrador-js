@@ -11,5 +11,95 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin: 2rem;
+    background-image: url(img/fondo-singin.jpg);
+    background-repeat: repeat;
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: rgb(143 63 63 / 70%);
+    box-shadow: 0 5px 30px black;
+    padding: 2rem 3rem;
+}
+
+.form input {
+    padding: 0.8rem;
+    background-color: #d97c6a;
+    border: 2px solid #853626;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.titulo-principal, input::placeholder {
+    color: white;
+}
+
+.btn-crear-cuenta {
+    padding: 0.6rem 1rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.cuenta {
+    color: white;
+}
+
+.cuenta:hover{
+    text-decoration: underline;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin: 0rem 2rem;
+    padding: 0.5rem 0rem;
+    gap: 0.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.home img {
+    width: 1.8rem;
+    height: 1.6rem;
+}
+
+.home a {
+    color: white;
+}
+
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.redes-sociales img {
+    height: 1.6rem;
+    width: 1.8rem;
+}
+
+.redes-sociales a {
+    color: white;
+}
+
+.facebook, .instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem;
+    font-size: 0.8rem;
+}
+
+.facebook{
+    background-color: #3b5998;
+}
+
+.instagram{
+    background: linear-gradient(289deg, #8d4280, transparent), radial-gradient(#ff0404, transparent);
+}
+
