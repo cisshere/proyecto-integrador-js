@@ -37,6 +37,16 @@ const borrarProducto = (producto, index) => {
   listaCarrito.splice(index, 1);
   guardarCarritoEnLocalStorage();
   mostrarCarrito();
+  Toastify({
+    text: "Se saco el producto de la lista",
+    className: "info",
+    duration: 2000,
+    gravity: "bottom",
+    close: true,
+    style: {
+      background: "linear-gradient(to right, #00b09b, #96c93d)",
+    }
+  }).showToast();
 };
 
 const mostrarCarrito = () => {
@@ -125,6 +135,16 @@ btnComprar.forEach((button, i) => {
     } else {
       producto.cantidad = 1;
       listaCarrito.push(producto);
+      Toastify({
+        text: "Se agrego un producto al carrito",
+        className: "info",
+        duration: 2000,
+        gravity: "bottom",
+        close: true,
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        }
+      }).showToast();
     }
     
     guardarCarritoEnLocalStorage();
@@ -134,6 +154,8 @@ btnComprar.forEach((button, i) => {
 
 const btnBorrarTodo = document.querySelector(".btn-borrar-todo");
 
+
+
  const borrarClick = () => {
   if (confirm("¿Desea borrar todo?") == true) {
     listaCarrito.splice(0, 100);
@@ -141,6 +163,17 @@ const btnBorrarTodo = document.querySelector(".btn-borrar-todo");
   btnBotonesLista.style.display = "none";
   mensajeCarritoVacio.style.display = "block";
   guardarCarritoEnLocalStorage();
+
+  Toastify({
+    text: "No hay productos en el carrito",
+    className: "info",
+    duration: 2000,
+    gravity: "bottom",
+    close: true,
+    style: {
+      background: "linear-gradient(to right, #00b09b, #96c93d)",
+    }
+  }).showToast();
   return;
   }
 } 
