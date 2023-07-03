@@ -6,6 +6,10 @@
   transition: all 0.3s linear;
 } 
 
+#nav {
+  animation: slide-right 0.5s ease;
+}
+
 
 *{
     margin: 0;

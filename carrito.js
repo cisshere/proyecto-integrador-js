@@ -132,4 +132,20 @@ btnComprar.forEach((button, i) => {
   });
 });
 
+const btnBorrarTodo = document.querySelector(".btn-borrar-todo");
+
+ const borrarClick = () => {
+  if (confirm("¿Desea borrar todo?") == true) {
+    listaCarrito.splice(0, 100);
+  contenedorProductosCarrito.innerHTML = "";
+  btnBotonesLista.style.display = "none";
+  mensajeCarritoVacio.style.display = "block";
+  guardarCarritoEnLocalStorage();
+  return;
+  }
+} 
+
+
+btnBorrarTodo.addEventListener("click", borrarClick);
+
 mostrarCarrito();
