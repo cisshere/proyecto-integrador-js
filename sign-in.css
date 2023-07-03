@@ -24,6 +24,14 @@ body {
     padding: 2rem 3rem;
 }
 
+.form a {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
 .form input {
     padding: 0.5rem;
     background-color: #d97c6a;
@@ -43,11 +51,6 @@ body {
     cursor: pointer;
 }
 
-.cuenta {
-    color: white;
-
-}
-
 .cuenta:hover{
     text-decoration: underline;
     cursor: pointer;
@@ -58,9 +61,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: black;
-    margin: 0rem 2rem;
     padding: 0.5rem 0rem;
-    gap: 0.2rem;
     border-radius: 1rem;
     cursor: pointer;
 }
@@ -68,10 +69,6 @@ body {
 .home img {
     width: 1.8rem;
     height: 1.6rem;
-}
-
-.home a {
-    color: white;
 }
 
 .redes-sociales{
@@ -86,15 +83,11 @@ body {
     width: 1.8rem;
 }
 
-.redes-sociales a {
-    color: white;
-}
-
 .facebook, .instagram {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 2rem;
+    margin: 0 3rem;
     font-size: 0.8rem;
 }
 
