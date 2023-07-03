@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&family=Slabo+27px&family=Unbounded:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Unbounded', cursive;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 2rem;
+}

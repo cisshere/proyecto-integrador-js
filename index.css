@@ -350,11 +350,15 @@ html{
 
 }
 
-.ver-mas a{
+.ver-mas button{
   background-color: #000000;
-    padding: 0.7rem 4rem;
-    border-radius: 0.5rem;
-    color: white;
+  border-radius: 0.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 2.5rem;
     }
 
 
