@@ -454,6 +454,7 @@ html{
 
    #texto {
     resize: none;
+    padding: 1rem;
    }
    
     .contenedor-text {
@@ -512,8 +513,8 @@ html{
     }
 
     .redes-sociales img {
-      width: 2rem;
-      height: 2rem;
+      width: 1.6rem;
+      height: 1.6rem;
     }
 
     .facebook, .instagram, .twitter {
@@ -527,15 +528,17 @@ html{
   
   .facebook{
       background-color: #3b5998;
+      gap: 1rem;
   }
   
   .instagram{
+    gap: 1rem;
       background: linear-gradient(289deg, #8d4280, transparent), radial-gradient(#ff0404, transparent);
   }
 
   .twitter{
     background-color: #004773;
-    gap: 1rem;
+    gap: 2.5rem;
   }
 
   .contactanos {
@@ -544,14 +547,4 @@ html{
     gap: 1rem;
     text-align: center;
     align-items: center;
-  }
-
-
-  .contactanos button {
-    padding: 1rem 0;
-    cursor: pointer;
-    width: 16rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }

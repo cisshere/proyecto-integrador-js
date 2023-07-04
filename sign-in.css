@@ -66,6 +66,14 @@ body {
     cursor: pointer;
 }
 
+.home-sign-in{
+    margin: 0 2.5rem;
+}
+
+.home-login {
+    margin: 0 3.3rem;
+}
+
 .home img {
     width: 1.8rem;
     height: 1.6rem;

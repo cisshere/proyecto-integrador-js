@@ -34,7 +34,8 @@ const listaCarritoVacia = () =>{
 }
 
 const borrarProducto = (producto, index) => {
-  listaCarrito.splice(index, 1);
+  if (confirm("¿Desea sacar este producto de la lista?") == true){
+    listaCarrito.splice(index, 1);
   guardarCarritoEnLocalStorage();
   mostrarCarrito();
   Toastify({
@@ -44,9 +45,12 @@ const borrarProducto = (producto, index) => {
     gravity: "bottom",
     close: true,
     style: {
-      background: "linear-gradient(to right, #00b09b, #96c93d)",
+      background: "#00b09b",
     }
   }).showToast();
+  return;
+  }
+  
 };
 
 const mostrarCarrito = () => {
@@ -132,13 +136,23 @@ btnComprar.forEach((button, i) => {
     if (indice !== undefined) {
       console.log(indice);
       listaCarrito[indice].cantidad += 1;
+      Toastify({
+        text: "Se agrego un producto al carrito",
+        className: "info",
+        duration: 1500,
+        gravity: "bottom",
+        close: true,
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        }
+      }).showToast();
     } else {
       producto.cantidad = 1;
       listaCarrito.push(producto);
       Toastify({
         text: "Se agrego un producto al carrito",
         className: "info",
-        duration: 2000,
+        duration: 1500,
         gravity: "bottom",
         close: true,
         style: {

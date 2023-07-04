@@ -50,3 +50,34 @@
         justify-content: space-around;
     }
 }
+
+
+@media (min-width: 1368px) {
+
+    body{
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    .navegador{
+        justify-content: center;
+        gap: 8rem;
+    }
+
+    .descuento-contenedor, footer, .beneficios{
+        width: 100%;
+    }
+
+    .productos-contenedor{
+        max-width: 1367px;
+    }
+
+  }
+
+  
+  
+  
+  
+  
+  
