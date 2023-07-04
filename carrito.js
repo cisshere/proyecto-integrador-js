@@ -45,10 +45,22 @@ const borrarProducto = (producto, index) => {
     gravity: "bottom",
     close: true,
     style: {
-      background: "#00b09b",
+      background: "#D63E2C",
     }
   }).showToast();
-  return;
+  }
+  if (listaCarrito.length == 0) {
+    Toastify({
+      text: "No hay productos en el carrito",
+      className: "info",
+      duration: 2000,
+      gravity: "bottom",
+      close: true,
+      style: {
+        background: "#B724AA",
+      }
+    }).showToast();
+    return;
   }
   
 };
@@ -143,9 +155,10 @@ btnComprar.forEach((button, i) => {
         gravity: "bottom",
         close: true,
         style: {
-          background: "linear-gradient(to right, #00b09b, #96c93d)",
+          background: "#4CD35A",
         }
       }).showToast();
+
     } else {
       producto.cantidad = 1;
       listaCarrito.push(producto);
@@ -156,7 +169,7 @@ btnComprar.forEach((button, i) => {
         gravity: "bottom",
         close: true,
         style: {
-          background: "linear-gradient(to right, #00b09b, #96c93d)",
+          background: "#4CD35A",
         }
       }).showToast();
     }
@@ -185,7 +198,7 @@ const btnBorrarTodo = document.querySelector(".btn-borrar-todo");
     gravity: "bottom",
     close: true,
     style: {
-      background: "linear-gradient(to right, #00b09b, #96c93d)",
+      background: "#B724AA",
     }
   }).showToast();
   return;
