@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&family=Slabo+27px&family=Unbounded:wght@400;500&display=swap');
 
-
- .prueba{
-  transform: translate(0%);
-  transition: all 0.3s linear;
-} 
-
-#nav {
-  animation: slide-right 0.5s ease;
-}
-
-
 *{
     margin: 0;
     padding: 0;
@@ -54,13 +43,13 @@ html{
     left: 0%;
     width: 12rem;
     align-items: center;
-    /* background-color: #95260e; */
     background-color: #853626;
     padding: 2rem 1rem;
     z-index: 1;
     gap: 4rem;
     font-size: 1.2rem;
   }
+
 
 .labios-rojos-logo {
   height: 4rem;
