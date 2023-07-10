@@ -9,8 +9,8 @@ const mostrarTotalCarrito = () => {
     return total + (producto.precio * producto.cantidad);
   }, 0);
 
-  const totalCarritoElement = document.getElementById("total-carrito");
-  totalCarritoElement.textContent = `Total: $ ${totalCarrito.toFixed(2)}`;
+  const totalCarritoMostrar = document.getElementById("total-carrito");
+  totalCarritoMostrar.textContent = `Total: $ ${totalCarrito.toFixed(2)}`;
 }
 
 const contenedorProductosCarrito = document.querySelector(".productos-contenedor-carrito");
