@@ -1,100 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Labios rojos SHOP</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/labios-rojos-logo.ico" />
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="mobile.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-</head>
-<body class="body">
-
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="img/labios-rojos-logo.ico"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+  <body class="body">
     <header id="header">
+      <nav class="navegador" id="navegador">
+        <div class="menu"></div>
+        <img
+          src="img/labios-rojos-logo.jpg"
+          alt="labios rojos logo"
+          class="labios-rojos-logo"
+        />
+        <div class="btn-registro">
+          <ul class="nav-list-secundario">
+            <li class="nav-item">
+              <a class="nav-item-link" href="sign-in.html">Crear Cuenta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item-link" href="login.html">Iniciar Sesión</a>
+            </li>
+          </ul>
+          <a href="sign-in.html">
+            <img src="img/usuario.png" alt="usuario registro" class="usuario" />
+          </a>
 
-        <nav class="navegador" id="navegador">
+          <img
+            src="img/bolsa-compra.png"
+            alt="bolsa de compra"
+            class="bolsa-compra"
+          />
 
-        
-            <div class="menu">
+          <div class="carrito">
+            <p class="mensaje-mi-carrito">🛒 Mi carrito</p>
+
+            <p id="mensaje-carrito-vacio">Carrito vacío</p>
+
+            <div class="productos-contenedor-carrito"></div>
+
+            <div class="btn-botones-lista">
+              <p id="total-carrito"></p>
+              <button class="btn-comprar-lista">Comprar</button>
+              <button class="btn-borrar-todo">Borrar Todo</button>
             </div>
-
-            <img src="img/labios-rojos-logo.jpg" alt="labios rojos logo" class="labios-rojos-logo">
-
-
-            <div class="btn-registro">
-
-    
-                <ul class="nav-list-secundario">
-                    
-                    <li class="nav-item"> <a class="nav-item-link" href="sign-in.html">Crear Cuenta</a> </li>
-                    <li class="nav-item"> <a class="nav-item-link" href="login.html">Iniciar Sesión</a> </li>
-                </ul>
-                <a href="sign-in.html"> <img src="img/usuario.png" alt="usuario registro" class="usuario"> </a>
-
-                <img src="img/bolsa-compra.png" alt="bolsa de compra" class="bolsa-compra">
-
-
-              <div class="carrito">
-                <p class="mensaje-mi-carrito">🛒 Mi carrito</p>
-            
-                <p id="mensaje-carrito-vacio">Carrito vacío</p>
-
-                <div class="productos-contenedor-carrito">
-
-                </div>
-
-                <div class="btn-botones-lista">
-                  <p id="total-carrito"></p>
-                  <button class="btn-comprar-lista"> Comprar </button>
-                  <button class="btn-borrar-todo">Borrar Todo</button>
-                </div>
-               
-              </div>
-
-
-            </div>
-    
-        </nav>
-
+          </div>
+        </div>
+      </nav>
     </header>
 
-    
- 
-     <section class="hero" id="Inicio">
-
-        <div class="portada mascarilla">
-            <div class="portada-contenedor">
-            <a href="">Tutorial mascarillas</a>
+    <section class="hero" id="Inicio">
+      <div class="portada mascarilla">
+        <div class="portada-contenedor">
+          <a href="">Tutorial mascarillas</a>
         </div>
-          </div>
+      </div>
 
-          <div class="portada make-up">
-            <div class="portada-contenedor">
-            <a href="">Tutorial de make-up</a>
+      <div class="portada make-up">
+        <div class="portada-contenedor">
+          <a href="">Tutorial de make-up</a>
         </div>
-          </div>
+      </div>
 
-          <div class="portada peinado">
-            <div class="portada-contenedor">
-            <a href="">Tutorial de peinado</a>
+      <div class="portada peinado">
+        <div class="portada-contenedor">
+          <a href="">Tutorial de peinado</a>
         </div>
-          </div>
+      </div>
+    </section>
 
- 
-  </section>
-  
     <div class="descuento-contenedor">
-    <p>15% DE DESCUENTO ABONANDO EN EFECTIVO / 3 Y 6 CUOTAS SIN INTERÉS CON TODAS LAS TARJETAS</p>
-</div>
-
-
+      <p>
+        15% DE DESCUENTO ABONANDO EN EFECTIVO / 3 Y 6 CUOTAS SIN INTERÉS CON
+        TODAS LAS TARJETAS
+      </p>
+    </div>
 
     <section class="cards" id="Productos">
-      
-
-      <h2 class="titulo-productos">PRODUCTOS</h2> 
+      <h2 class="titulo-productos">PRODUCTOS</h2>
 
       <div class="lista-productos">
         <button class="todos">Todos</button>
@@ -103,110 +100,117 @@
         <button class="mascarillas">Mascarilla</button>
       </div>
 
-      <div class="productos-contenedor" >
+      <div class="productos-contenedor"></div>
 
-        
-    </div>
-
-      <div class="ver-mas"> 
-      <button>Ver Más</button>
-    </div>
-
-    
+      <div class="ver-mas">
+        <button>Ver Más</button>
+      </div>
     </section>
 
     <section class="beneficios" id="Beneficios">
-
-      <div class="beneficios-contenedor"> 
+      <div class="beneficios-contenedor">
         <div>
-           <img src="img/labial-fondo.png" alt="">
-      </div>
+          <img src="img/labial-fondo.png" alt="" />
+        </div>
 
-      <div class="info-beneficios">
-        <h2 class="beneficios-titulo">Beneficios</h2>
-      <p>¿Queres ser modelo? <a href="sign-in.html">Registrate</a> y ya estas participando!</p>
-      <p>Sorteamos un año de LABIALES GRATIS!</p>
+        <div class="info-beneficios">
+          <h2 class="beneficios-titulo">Beneficios</h2>
+          <p>
+            ¿Queres ser modelo? <a href="sign-in.html">Registrate</a> y ya estas
+            participando!
+          </p>
+          <p>Sorteamos un año de LABIALES GRATIS!</p>
+        </div>
       </div>
-
     </section>
 
-
     <section class="contacto" id="Contacto">
-
       <form class="form">
+        <h2>Contacto</h2>
 
-          <h2>Contacto</h2>
+        <div class="contenedor">
+          <label for="correo"></label>
+          <input
+            type="email"
+            autocomplete="off"
+            id="correo"
+            placeholder="Nombre completo"
+          />
+        </div>
 
-          <div class="contenedor">
-              <label for="correo"></label>
-              <input type="email" autocomplete="off" id="correo" placeholder="Nombre completo">
-          </div>
+        <div class="contenedor">
+          <label for="correo"></label>
+          <input
+            type="email"
+            autocomplete="off"
+            id="correo"
+            placeholder="Email"
+          />
+        </div>
 
-          <div class="contenedor">
-              <label for="correo"></label>
-              <input type="email" autocomplete="off" id="correo" placeholder="Email">
-          </div>
-          
-          <div class="contenedor contenedor-text">
-          <label for="texto"> 💋 Deje un comentario  💋</label>
+        <div class="contenedor contenedor-text">
+          <label for="texto"> 💋 Deje un comentario 💋</label>
           <textarea name="texto" id="texto" cols="25" rows="5"></textarea>
+        </div>
+
+        <div class="input-contacto">
+          <input type="submit" value="Submit" class="submit" />
+        </div>
+      </form>
+
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14420.843051213684!2d-57.484374492187484!3d-25.3642519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945dad6b9bd2b3af%3A0x8076f2097fa8016!2sJyD%20tienda%20de%20Ropas!5e0!3m2!1ses!2spy!4v1675261714353!5m2!1ses!2spy"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer>
+      <div class="bases-condiciones">
+        <h4>Atención al Cliente</h4>
+        <a href="">Centro de ayuda</a>
+        <a href="">Términos y Condiciones</a>
+        <a href="">Legales de Promociones</a>
+      </div>
+
+      <div class="redes">
+        <div>
+          <h4>¡Seguinos en nuestras redes!</h4>
+        </div>
+        <div class="redes-sociales">
+          <div class="facebook">
+            <img src="img/facebook.png" alt="facebook" />
+            <a href="https://www.facebook.com/">En Facebook</a>
           </div>
-
-          <div class="input-contacto" >
-          <input type="submit" value="Submit" class="submit">
-           </div>
-
-          </form>                 
-
-              <div class="mapa">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14420.843051213684!2d-57.484374492187484!3d-25.3642519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945dad6b9bd2b3af%3A0x8076f2097fa8016!2sJyD%20tienda%20de%20Ropas!5e0!3m2!1ses!2spy!4v1675261714353!5m2!1ses!2spy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-
-      </section>
-
-      <footer>
-
-        <div class="bases-condiciones">
-          <h4>Atención al Cliente</h4>
-          <a href="">Centro de ayuda</a>
-          <a href="">Términos y Condiciones</a>
-          <a href="">Legales de Promociones</a>
+          <div class="instagram">
+            <img src="img/instragram.png" alt="instagram" />
+            <a href="https://www.instagram.com/">En Instagram</a>
+          </div>
+          <div class="twitter">
+            <img src="img/twitter.jpg" alt="twitter" />
+            <a href="https://www.twitter.com/">En Twitter</a>
+          </div>
         </div>
+      </div>
 
-        <div class="redes">
-          <div>
-            <h4>¡Seguinos en nuestras redes!</h4>
-           </div>
-           <div class="redes-sociales">
-            <div class="facebook">
-                <img src="img/facebook.png" alt="facebook">
-                <a href="https://www.facebook.com/">En Facebook</a>
-                </div>
-                <div class="instagram">
-                    <img src="img/instragram.png" alt="instagram">
-                    <a href="https://www.instagram.com/">En Instagram</a>
-                    </div>
-                    <div class="twitter">
-                      <img src="img/twitter.jpg" alt="twitter">
-                      <a href="https://www.twitter.com/">En Twitter</a>
-                      </div>
-            </div>
-
-            </div>
-
-            <div class="contactanos">
-              <h4>¿Necesitas Ayuda? 📞</h4>
-          <p>0800-666-6666 | <a href="">Contacto</a></p>
-            </div>
-        </div>
-        
-      </footer>
+      <div class="contactanos">
+        <h4>¿Necesitas Ayuda? 📞</h4>
+        <p>0800-666-6666 | <a href="">Contacto</a></p>
+      </div>
+    </footer>
 
     <script src="datosProductos.js"></script>
     <script src="index.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script src="carrito.js"></script>
-
-    </body>
-
-    </html>
+  </body>
+</html>

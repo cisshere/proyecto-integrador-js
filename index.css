@@ -96,12 +96,11 @@ html{
 
 .nav-list-secundario-des {
   display: flex;
-    top: 74px;
-    position: absolute;
-    top: 74px;
-    flex-direction: column;
-    right: 4rem;
-    background-color: #a14242;
+  position: absolute;
+  flex-direction: column;
+  right: 4rem;
+  top: 74px;
+  background-color: #a14242;
 }
 
   .btn-registro a {

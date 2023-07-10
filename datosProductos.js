@@ -6,7 +6,7 @@ const productosInfo = [
     nombre: "Maybelline Gloss",
     precio: 8000,
     tono: "Tono: Pétalo",
-    articulo: "gloss",
+    categoria: "gloss",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const productosInfo = [
     nombre: "Labial HD velvet",
     precio: 15000,
     tono: "Tono: Rojo ésika",
-    articulo: "labial",
+    categoria: "labial",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const productosInfo = [
     nombre: "labial rimmel",
     precio: 13000,
     tono: "Tono: mauve bliss",
-    articulo: "labial",
+    categoria: "labial",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const productosInfo = [
     nombre: "Maybelline Sensat",
     precio: 15000,
     tono: "Tono: Borgoña",
-    articulo: "labial",
+    categoria: "labial",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const productosInfo = [
     nombre: "Labial colorfix",
     precio: 20000,
     tono: "Tono: Rojo seductor",
-    articulo: "labial",
+    categoria: "labial",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const productosInfo = [
     nombre: "Gloss Rhode",
     precio: 22000,
     tono: "Tono: Brillos",
-    articulo: "gloss",
+    categoria: "gloss",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const productosInfo = [
     nombre: "Nivea balsamo",
     precio: 3000,
     tono: "Tono: Blackberry",
-    articulo: "labial",
+    categoria: "labial",
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const productosInfo = [
     nombre: "Mascarilla garnier",
     precio: 3100,
     tono: "Aroma: Sandia",
-    articulo: "mascarilla",
+    categoria: "mascarilla",
   },
   {
     id: 9,
@@ -78,6 +78,6 @@ const productosInfo = [
     nombre: "Mascarilla ojeras ",
     precio: 3000,
     tono: "Aroma: Coco",
-    articulo: "mascarilla",
+    categoria: "mascarilla",
   },
 ];
