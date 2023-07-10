@@ -87,21 +87,14 @@ btnTodos.addEventListener("click", () => {
   mostrarProductos(productosInfo);
 });
 
-btnLabial.addEventListener("click", () => {
-  const labiales = productosInfo.filter((producto) => producto.articulo === "labial");
-  mostrarProductos(labiales);
-});
+const filtrar = (articulo) => {
+  const producto = productosInfo.filter((producto) => producto.articulo === articulo);
+  mostrarProductos(producto);
+}
 
-btnGloss.addEventListener("click", () => {
-  const glosses = productosInfo.filter((producto) => producto.articulo === "gloss");
-  mostrarProductos(glosses);
-});
-
-btnMascarillas.addEventListener("click", () => {
-  const mascarillas = productosInfo.filter((producto) => producto.articulo === "mascarilla");
-  mostrarProductos(mascarillas);
-});
-
+btnLabial.addEventListener("click", () => filtrar("labial"));
+btnGloss.addEventListener("click", () => filtrar("gloss"));
+btnMascarillas.addEventListener("click", () => filtrar("mascarilla"));
 
 const mostrarCarrito = () => {
   contenedorProductosCarrito.innerHTML = "";
