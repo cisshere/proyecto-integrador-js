@@ -39,7 +39,7 @@ html{
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 74px;
+    top: 4.62rem;
     left: 0%;
     width: 12rem;
     align-items: center;
@@ -99,7 +99,7 @@ html{
   position: absolute;
   flex-direction: column;
   right: 4rem;
-  top: 74px;
+  top: 4.62rem;
   background-color: #a14242;
 }
 
@@ -131,14 +131,14 @@ html{
   display: flex;
   flex-direction: column;
   position: absolute;
-    top: 74px;
+    top: 4.62rem;
     background-color: #7b3b2e;
     color: white;
     right: 1rem;
     padding: 0.5rem 0 1rem 1rem;
     gap: 1rem;
     width: 20rem;
-    border: 1px solid black;
+    border: 0.06rem solid black;
     
 }
 
@@ -175,7 +175,7 @@ html{
 }
 
 .btn-sumar, .btn-restar {
-  padding: 0px 0.3rem;
+  padding: 0 0.3rem;
   font-weight: bold;
 }
 
@@ -251,7 +251,7 @@ html{
 
   .portada-contenedor a:hover{
     background-color: #d14d2f;
-    padding: 21px;
+    padding: 1.31rem;
   }
 
   /************* DESCUENTOS *************/
@@ -288,7 +288,7 @@ html{
 .lista-productos button{
   padding: 0.4rem;
     background-color: #b55f4e;
-    border-radius: 9px;
+    border-radius: 0.56rem;
     cursor: pointer;
 }
 
@@ -313,7 +313,7 @@ html{
   width: 12rem;
   height: 12rem;
     margin: 0.75rem;
-    border-radius: 0.938rem;
+    border-radius: 0.93rem;
     cursor: pointer;
 }
 
@@ -324,7 +324,7 @@ html{
 .btn-comprar {
     background-color: #000000;
     padding: 0.5rem 3rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.12rem;
     color: white;
   }
 
@@ -406,8 +406,8 @@ html{
 
     .info-beneficios a {
       background-color: white;
-    border-radius: 5px;
-    padding: 2px;
+    border-radius: 0.31rem;
+    padding: 0.12rem;
     color: #ab2d43;
     }
 
@@ -432,7 +432,7 @@ html{
 
     .form input, #texto {
     background-color: #d97c6a;
-    border: 5px solid #853626;
+    border: 0.31rem solid #853626;
     border-radius: 1rem;
     }
 

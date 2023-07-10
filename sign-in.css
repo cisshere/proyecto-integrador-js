@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     gap: 0.8rem;
     background-color: rgb(143 63 63 / 70%);
-    box-shadow: 0 5px 30px black;
+    box-shadow: 0 0.31rem 1.87rem black;
     padding: 2rem 3rem;
 }
 
