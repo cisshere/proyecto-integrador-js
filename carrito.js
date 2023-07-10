@@ -78,6 +78,31 @@ const borrarProducto = (producto, index) => {
   
 };
 
+const btnTodos = document.querySelector(".todos");
+const btnLabial = document.querySelector(".labial");
+const btnGloss = document.querySelector(".gloss");
+const btnMascarillas = document.querySelector(".mascarillas");
+
+btnTodos.addEventListener("click", () => {
+  mostrarProductos(productosInfo);
+});
+
+btnLabial.addEventListener("click", () => {
+  const labiales = productosInfo.filter((producto) => producto.articulo === "labial");
+  mostrarProductos(labiales);
+});
+
+btnGloss.addEventListener("click", () => {
+  const glosses = productosInfo.filter((producto) => producto.articulo === "gloss");
+  mostrarProductos(glosses);
+});
+
+btnMascarillas.addEventListener("click", () => {
+  const mascarillas = productosInfo.filter((producto) => producto.articulo === "mascarilla");
+  mostrarProductos(mascarillas);
+});
+
+
 const mostrarCarrito = () => {
   contenedorProductosCarrito.innerHTML = "";
 
