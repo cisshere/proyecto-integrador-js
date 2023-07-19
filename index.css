@@ -135,9 +135,9 @@ html{
     background-color: #7b3b2e;
     color: white;
     right: 1rem;
-    padding: 0.5rem 0 1rem 1rem;
+    padding: 0.5rem 0 1rem 0.4rem;
     gap: 1rem;
-    width: 20rem;
+    width: 21rem;
     border: 0.06rem solid black;
     
 }
@@ -152,15 +152,15 @@ html{
 }
 
 .prod-carrito-img {
-  width: 4rem;
-  height: 4.2rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border: 3px solid black;
 }
 
 .datos-producto{
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.5rem;
 }
 
 .productos-contenedor-carrito {
