@@ -265,6 +265,7 @@ html{
       color: white;
       text-align: center;
     font-weight: bold;
+    box-sizing: border-box;
   }
 
 
@@ -470,6 +471,7 @@ html{
     color: white;
     background-color: black;
     padding: 2rem;
+    box-sizing: border-box;
     }
 
     footer a {
