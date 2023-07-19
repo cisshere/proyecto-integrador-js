@@ -153,16 +153,18 @@ html{
 
 .prod-carrito-img {
   width: 4rem;
-  height: 4rem;
+  height: 4.2rem;
+  border: 3px solid black;
 }
 
 .datos-producto{
   display: flex;
   flex-direction: column;
+  gap: 0.3rem;
 }
 
 .productos-contenedor-carrito {
-  gap: 0.5rem;
+  gap: 1.3rem;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
